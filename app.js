@@ -10,7 +10,6 @@ var mongoose = require('mongoose');
 // *** mongodb CloudServer(AWS, GCP, Azure) mlab.com hosting connection *** //
 // *** https://mlab.com/home *** //
 // *** mongodb://<dbuser>:<dbpassword>@ds117878.mlab.com:17878/nodepj *** //
-// mongoose.connect('mongodb://dariane:1234@ds117878.mlab.com:17878/nodepj');
 mongoose.connect(process.env.MONGO_DB); // DB Connect Info Security ( github master )
 var db = mongoose.connection;
 db.once("open", function(){
