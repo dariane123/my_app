@@ -9,8 +9,11 @@ var bodyParser = require('body-parser'); // http header body
 // github https://github.com/dariane123/my_app.git
 // *** site => https://mlab.com/home /// mongodb CloudServer(AWS, GCP, Azure) mlab.com hosting connection *** //
 // *** mongodb://<dbuser>:<dbpassword>@ds117878.mlab.com:17878/nodepj *** //
+<<<<<<< HEAD
 // mongoose.connect('mongodb://dariane:1234@ds117878.mlab.com:17878/nodepj');
 // *** connection database *** //
+=======
+>>>>>>> 47f92a6db1d6ead849c5854fe2000080e2b23209
 mongoose.connect(process.env.MONGO_DB); // DB Connect Info Security ( github master )
 var db = mongoose.connection;
 db.once("open", function(){
